@@ -1,0 +1,7 @@
+{
+  "produto" : [
+    {"id" : 1,"name" : "Coca-Cola","valor" : "8,90","peso" : "600ls","quantidade" : 1000},
+    {"id" : 2,"name" : "Cola","valor" : "3,50","peso" : "600gm","quantidade" : 100},
+    {"id" : 3,"name" : "Coca","valor" : "20,","peso" : "10g","quantidade" : 10000}
+  ]
+  }
