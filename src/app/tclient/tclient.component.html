@@ -1,3 +1,42 @@
+<div class="row">
+  <div class="col-8 m-auto">
+
+  <form [formGroup]="formGroupProduto">
+      <div class="mb-3">
+        <div class="display-6 text-center">
+          Cadastro de Produtos
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="name" class="form-label">Nome</label>
+        <input type="text"  formControlName="name" class="form-control" id="name" placeholder="Nome">
+      </div>
+      <div class="mb-3">
+        <label for="valor" class="form-label">Valor</label>
+        <input type="valor" formControlName="valor" class="form-control" id="valor" placeholder="valor">
+      </div>
+      <div class="mb-3">
+        <label for="peso" class="form-label">Peso</label>
+        <input type="peso" formControlName="peso" class="form-control" id="peso" placeholder="peso">
+      </div>
+      <div class="mb-3">
+        <label for="quantidade" class="form-label">Quantidade</label>
+        <input type="quantidade" formControlName="quantidade" class="form-control" id="quantidade" placeholder="quantidade">
+      </div>
+      <div class="mb-3">
+        <label for="data" class="form-label">Data</label>
+        <input type="data" formControlName="data" class="form-control" id="data" placeholder="data">
+      </div>
+
+      <div class="mb-3 d-flex justify-content-end">
+        <button class="btn btn-primary" (click)="save()">Salvar</button>
+        <button class="btn btn-danger" (click)="clear()">Limpar</button>
+      </div>
+
+
+
+
+
 <table class="table table-striped">
 
   <thead>
@@ -16,10 +55,14 @@
        <tr *ngFor="let TPD of produto">
          <th scope="row">{{TPD.id}}</th>
          <td>{{TPD.name}} </td>
-         <td>R$:{{TPD.valor}}</td>
+         <td>R${{TPD.valor}}</td>
          <td>{{TPD.peso}}</td>
-         <td>U:{{TPD.quantidade}}</td>
+         <td>Un:{{TPD.quantidade}}</td>
          <td>V:{{TPD.data}}</td>
+         <td class="d-flex justify-content-end">
+          <button class="btn btn-primary me-1" (click)="edit(TPD)">Editar</button>
+          <button class="btn btn-danger "(click)="delete(TPD)">Excluir</button>
+        </td>
 
        </tr>
 

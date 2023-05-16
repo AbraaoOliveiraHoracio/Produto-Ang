@@ -15,5 +15,16 @@ getTPD(): Observable<TPD[]>{
   return this.http.get<TPD[]>(this.url);
 
 }
+save(produto:TPD): Observable<TPD>{
+  return this.http.post<TPD>(this.url, produto);
+
+}
+delete(produto: TPD): Observable<void>{
+  return this.http.delete<void>(`${this.url}/${produto.id}`);
+
+}
+update(produto: TPD): Observable<TPD>{
+  return this.http.put<TPD>(`${this.url}/${produto.id}`, produto);
+}
 
 }
