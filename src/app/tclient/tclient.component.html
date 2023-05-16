@@ -1,1 +1,28 @@
-<p>tclient works!</p>
+<table class="table table-striped">
+
+  <thead>
+       <tr>
+         <th scope="col">#</th>
+         <th scope="col">Nome</th>
+         <th scope="col">valor</th>
+         <th scope="col">peso</th>
+         <th scope="col">quantidade</th>
+         <th scope="col">data</th>
+
+       </tr>
+     </thead>
+
+     <tbody>
+       <tr *ngFor="let TPD of produto">
+         <th scope="row">{{TPD.id}}</th>
+         <td>{{TPD.name}} </td>
+         <td>R$:{{TPD.valor}}</td>
+         <td>{{TPD.peso}}</td>
+         <td>U:{{TPD.quantidade}}</td>
+         <td>V:{{TPD.data}}</td>
+
+       </tr>
+
+     </tbody>
+   </table>
+

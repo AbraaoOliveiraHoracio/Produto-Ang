@@ -7,12 +7,12 @@ import { TPD } from './TPD';
   providedIn: 'root'
 })
 export class TPorodutoService {
-
+url = "http://localhost:3000/produto";
   constructor(private http: HttpClient){}
 
 getTPD(): Observable<TPD[]>{
-  let url = "http://localhost:3000/produto";
-  return this.http.get<TPD[]>(url);
+
+  return this.http.get<TPD[]>(this.url);
 
 }
 

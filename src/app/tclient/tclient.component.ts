@@ -1,3 +1,5 @@
+
+import { TPD } from '../TPD';
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
@@ -9,6 +11,7 @@ import { TPorodutoService } from '../t-poroduto.service';
   styleUrls: ['./tclient.component.css']
 })
 export class TClientComponent implements OnInit {
+  produto:TPD []= [];
   constructor(private tporodutoService: TPorodutoService){
 
   }
@@ -17,7 +20,7 @@ export class TClientComponent implements OnInit {
   }
   loadProduto(){
     this.tporodutoService.getTPD().subscribe({
-      next : data => this.TPD = data
+      next : data => this.produto= data
     });
 
   }

@@ -1,7 +1,9 @@
 {
   "produto" : [
-    {"id" : 1,"name" : "Coca-Cola","valor" : "8,90","peso" : "600ls","quantidade" : 1000},
-    {"id" : 2,"name" : "Cola","valor" : "3,50","peso" : "600gm","quantidade" : 100},
-    {"id" : 3,"name" : "Coca","valor" : "20,","peso" : "10g","quantidade" : 10000}
+    {"id" : 1,"name" : "Coca-Cola","valor" : "8,90","peso" : "600ls","quantidade" : 1000, "data" : " 24/25" },
+    {"id" : 2,"name" : "Cola","valor" : "3,50","peso" : "600gm","quantidade" : 100, "data" : " 24/27"},
+    {"id" : 3,"name" : "Coca","valor" : "20","peso" : "10g","quantidade" : 10000, "data" : " 12/22"},
+    {"id" : 4,"name" : "Pó","valor" : "100","peso" : "10g","quantidade" : 10, "data" : " 02/19"},
+    {"id" : 5,"name" : "Machonha","valor" : "40","peso" : "10g","quantidade" : 1000, "data" : " 04/24"}
   ]
   }

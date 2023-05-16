@@ -4,6 +4,8 @@ export interface TPD{
   valor : number;
    peso : number;
   quantidade : number;
+  data : number;
+
 
 
 
